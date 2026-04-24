@@ -1,0 +1,12 @@
+# --- AI Inference Engine ---
+faster-whisper
+
+# --- Standalone GPU Runtimes (Small & Efficient) ---
+# These provide the CUDA/cuDNN logic for Faster-Whisper without the 5GB Torch overhead
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+
+# --- Lightweight Torch (CPU only) ---
+# This satisfies the dependency check but stays under 200MB
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
